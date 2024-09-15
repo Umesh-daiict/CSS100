@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css day 2</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="center">
+        <div class="container ">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuIcon = document.querySelector(".container");
+      console.log(menuIcon.querySelectorAll("div"))
+      menuIcon.addEventListener("mouseover",handleTransition)
+      menuIcon.addEventListener("mouseout",handleCloseTransition)
+
+      function handleTransition(){
+        menuIcon.querySelectorAll("div").forEach((divs,idx)=>{
+          divs.classList.add(`line${idx+1}--active`)
+        })
+      }
+      
+      function handleCloseTransition(){
+        menuIcon.querySelectorAll("div").forEach((divs,idx)=>{
+          divs.classList.remove(`line${idx+1}--active`)
+        })
+      }
+    </script>
+  </body>
+</html>

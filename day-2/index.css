@@ -1,0 +1,61 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	background: #3FAF82;
+	color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container {
+	display: flex;
+	gap: 4px;
+	flex-direction: column;
+	
+}
+
+.container > * {
+	background-color: white;
+	height: 16px;
+	width: 96px;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: transform 100ms ease-in-out;
+}
+
+.line1--active {
+	transform: translateY(20px) rotate(45deg);
+	transform-origin: 69px 12px;
+}
+
+.line2--active {
+	display: none;
+}
+
+.line3--active {
+	transform: translateY(-20px) rotate(-45deg);
+	transform-origin: 58px 2px;
+
+	
+}
+

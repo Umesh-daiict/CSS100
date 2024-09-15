@@ -1,0 +1,105 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(to bottom left, #4dbec7, #433da0);
+}
+.number {
+	position:relative;
+}
+
+.number > * {
+	/* // padding:4px */
+}
+.one-one {
+	background-color: white;
+	padding:0.7rem;
+	width: 26px;
+	position:absolute;
+	top: 0.5px;
+	left: -27px;
+	transform: rotate(-20deg);
+	border-radius: 3px;
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	z-index:-1;
+}
+
+.one-two{
+	width: 24px;
+	height: 100px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	z-index:20;
+	position:absolute;
+	left:0;
+	top:-6px;
+}
+.zero-one,
+.zero-two {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	position: absolute;
+	border: 24px solid white;
+	box-sizing: border-box;
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	top: 0;
+	left: 17px;
+	z-index: 8;
+}
+
+.zero-two {
+	left: 100px;
+	z-index: 6;
+}
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.big {
+	display:block;
+	font-size: 5rem;
+	color:white;
+	font-family: Courier New, Courier;
+	font-weight:700;
+	text-transform:uppercase;
+}
+.small {
+	display:block;
+	position: relative;
+	font-size: 1.5rem;
+	color:white;
+	font-family: Courier New, Courier;
+	font-weight:700;
+	text-transform:uppercase;
+	top: -1.5rem
+}
+
+.number{
+    width: 200px;
+    height: 100px;
+}
